@@ -1,0 +1,3 @@
+4/22 Meeting
+
+We finally finished our Embedded Systems project. This took all afternoon but we got the master sending messages to all of the slaves. Using multiple tasks in the C code was the trick to getting UART data sent over the network. This is using an actual MESH network which will help for our senior project, we will demonstrate this for Embedded tomorrow morning.

@@ -1,0 +1,3 @@
+4/18 Meeting
+
+After some countless days of struggle we have finally got the ESP Mesh network working. Working as in the boards are connected through each other. We wasted a lot of time trying to setup the Eclipse IDE for ESP-IDF programming. Opening the correct folder in Visual Studio Code gives us everything we need about methods, dependencies, etc. We also figured out how to use the terminal window to flash and program the boards. The next step is to get text transferring between the master and slave boards.

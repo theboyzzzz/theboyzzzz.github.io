@@ -1,0 +1,3 @@
+4/13 Meeting
+
+Started working on our Embedded Systems final project that will include mesh networking, but transferring text instead. This stuff looks really confusing to all of us and we're still trying to dig through research and figure out how to begin. Stephan is looking into ESP-IDF which has some Mesh capabilities for C code.

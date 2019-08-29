@@ -1,0 +1,3 @@
+3/24 Meeting
+
+We met up on Discord tonight to talk about our prototype proposal. We've decided that we will order some ESP32 boards to create a wireless mesh network. We will try and showcase that pushing a button on one of the boards will illuminate an LED on the other. We wrote our proposal together and will submit it now before the due date.

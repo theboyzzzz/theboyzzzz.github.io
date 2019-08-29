@@ -1,0 +1,3 @@
+4/24 Meeting
+
+Leaf to Root communication is working for our project. Leaf to leaf seems to be a big hassle though. We are getting watchdog call outs when our code is running, we think this has something to do with how many tasks we're running in the C code. Root and leaf node have 4 tasks each, and this is a lot of processing power. We will look into consolodating these tasks and trying to get Leaf to leaf working before this weekend.

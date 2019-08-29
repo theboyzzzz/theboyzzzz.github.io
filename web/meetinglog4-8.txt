@@ -1,0 +1,3 @@
+4/8 Meeting
+
+With the Huzzah 32s we were able to successfully get them to connect using ESP-NOW protocol. This is a master-slave protocol that allows for a master to send messages to any slaves in its network. For our prototype, we've configured one board as a master and the other board as a slave. Through a counter that increments every one second interval we toggle an LED ON/OFF wirelessly. We will revise this to add some kind of user input beforee the prototype demonstration due date.

@@ -1,0 +1,8 @@
+4/23 Meeting
+
+Pierre and Tom liked our project that we made for Embedded but they thought it was a little too simple for four people. We must now make the following changes:
+Leaf to Root Communication
+Leaf to Leaf Communication
+We will start looking into how to do this stuff soon, but we are taking the rest of the day off.
+Everyone this week in their free time talked about how they would starting adding to the final proposal. We can add some of this current progress in the report.
+

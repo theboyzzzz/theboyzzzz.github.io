@@ -1,0 +1,3 @@
+4/10 Meeting
+
+Today we took our ESP-NOW prototype code and modified it to include a button press. We attempted to have the button work as a toggle switch, but debouncing was causing us some brown-out detection issues. What we did implement for our prototype that we will show Professor Brunvand is this: On button press with the master board, the slave LED will toggle on/off. When the button is released, the toggling will cease, so whatever status the LED is it will stay this way. On button press again, the LED will start toggling again. We have also noted that this ESP-NOW will not be good enough for our final project. We must figure out how to use the mesh networking capabilities. 

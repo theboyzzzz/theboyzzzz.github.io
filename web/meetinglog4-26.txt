@@ -1,0 +1,6 @@
+4/26 Meeting
+
+We have gotten Leaf to leaf communication working! This took a while today but we consolodated a lot of the C tasks and changed some our flag variable logic. 
+Messages now successfully broadcast throughout the mesh network from any node. Leaf node messages will propogate to the root, who then sends this throughout the routing table.
+Root messages send messages to all children in their routing table etc. We have taken a video for submission for our Embedded final project. We may use this video in our 
+PowerPoint Presentation for CS3992.
