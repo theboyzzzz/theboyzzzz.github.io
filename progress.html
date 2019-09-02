@@ -1,144 +1,146 @@
 <!-- Include this in every file for nav bar and boostrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-  $(function () {
-    $("#header").load("base.html");
-  });
+    $(function () {
+        $("#header").load("base.html");
+    });
 </script>
 <div id="header"></div>
 
-<div class="container">
-    <h2>Progress Report</h2>
-
-    <table>
-        <tr>
-            <th>Milestones:</th>
-            <th>Description:</th>
-            <th>Date Started:</th>
-            <th>Date Completed:</th>
-            <th>Contributor(s):</th>
-            <th>Status:</th>
-        </tr>
-        <!--Milestone #1-->
-        <tr>
-            <td><strong>Create PCBs and get them communicating with ESP32 boards</strong></td>
-            <td>
-                Design our custom PCBs that have a headphone jack and other circuitry to receive 
-                and send audio data out from the ESP32 boards</td>
-            <td>9/26/19</td>
-            <td>--</td>
-            <td>All</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:10%">10%</div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #2-->      
-        <tr>
-            <td><strong>Successfully form a mesh network between our transmitter and receivers</strong></td>
-            <td>
-                Create our own mesh network  using readily available protocols such as:
-                TCP/IP, UDP or use ESP-MESH, which is a provided protocol developed by ESP
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #3-->
-        <tr>
-            <td><strong>Send audio from the transmitter to a single receiver</strong></td>
-            <td>
-                Attempt to play music into the transmitter, send it to a receiver and 
-                play out the song on the other end.
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #4-->
-        <tr>
-            <td><strong>Send audio from the transmitter to multiple receivers</strong></td>
-            <td>
-                See if we can send audio to nodes that are further than one level away.
-                This will require  intermediate nodes to withhold the data for themselves and
-                then forward it down to the leaf connected to it. 
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #5-->
-        <tr>
-            <td><strong>Synchronize audio signals between every device in the mesh network</strong></td>
-            <td>
-                Since intermediate nodes will have the audio data before the leaves have the data,
-                we will anticipate running into some synchronization issues.
-                We will have to figure out how to hold data and
-                then delay it so that the leaves can play out the music in sync.
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #6-->
-        <tr>
-            <td><strong>Mobile application development and integration</strong></td>
-            <td>
-                Create a management application so that users can view network statistics,
-                add or remove nodes from the network and apply effects to the music.
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
-        <!--Milestone #7-->
-        <tr>
-            <td><strong>Fully functioning  audio mesh system with full integration with the mobile app</strong></td>
-            <td>
-                Add final touches and clean everything up to have a working project.
-            </td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-            <td>
-                <div>
-                    <!--Change width and text together-->
-                    <div class="w3-green w3-center" style="width:0%;"></div>
-                </div>
-            </td>
-        </tr>
+<div class="container-fluid">
+    <br>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Date Started</th>
+                <th>Date Completed</th>
+                <th>Contributor(s)</th>
+                <th>Progress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Milestone #1-->
+            <tr>
+                <td><strong>Create PCBs and get them communicating with ESP32 boards</strong></td>
+                <td>
+                    Design our custom PCBs that have a headphone jack and other circuitry to receive
+                    and send audio data out from the ESP32 boards </td>
+                <td>8/26/19</td>
+                <td>--</td>
+                <td>All</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><strong>25%</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #2-->
+            <tr>
+                <td><strong>Successfully form a mesh network between our transmitter and receivers</strong></td>
+                <td>
+                    Create our own mesh network using readily available protocols such as:
+                    TCP/IP, UDP or use ESP-MESH, which is a provided protocol developed by ESP
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #3-->
+            <tr>
+                <td><strong>Send audio from the transmitter to a single receiver</strong></td>
+                <td>
+                    Attempt to play music into the transmitter, send it to a receiver and
+                    play out the song on the other end.
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #4-->
+            <tr>
+                <td><strong>Send audio from the transmitter to multiple receivers</strong></td>
+                <td>
+                    See if we can send audio to nodes that are further than one level away.
+                    This will require intermediate nodes to withhold the data for themselves and
+                    then forward it down to the leaf connected to it.
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #5-->
+            <tr>
+                <td><strong>Synchronize audio signals between every device in the mesh network</strong></td>
+                <td>
+                    Since intermediate nodes will have the audio data before the leaves have the data,
+                    we will anticipate running into some synchronization issues.
+                    We will have to figure out how to hold data and
+                    then delay it so that the leaves can play out the music in sync.
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #6-->
+            <tr>
+                <td><strong>Mobile application development and integration</strong></td>
+                <td>
+                    Create a management application so that users can view network statistics,
+                    add or remove nodes from the network and apply effects to the music.
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+            <!--Milestone #7-->
+            <tr>
+                <td><strong>Fully functioning audio mesh system with full integration with the mobile app</strong></td>
+                <td>
+                    Add final touches and clean everything up to have a working project.
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow=""
+                            aria-valuemin="0" aria-valuemax="100"><strong></strong></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>
-    
